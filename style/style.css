@@ -8,6 +8,8 @@ h1, h2, h3{color:whitesmoke;}
 
 .stage{
     background-color:#252EF5;
+    padding: 10px;
+   
 }
 .square{
     width: 150px;
@@ -15,6 +17,7 @@ h1, h2, h3{color:whitesmoke;}
     background-color: #6F76F7;
     border: 1px solid black;
     display: inline-block;
+    border-radius: 5px;
 }
 .o{
     position: relative;
@@ -24,7 +27,7 @@ h1, h2, h3{color:whitesmoke;}
     position: absolute;
     content:"\1F6E1";
     font-size: 50px;
-    line-height: 150px;
+    line-height: 100px;
     top: 0;
     bottom: 0;
     left: 0;
@@ -40,10 +43,12 @@ h1, h2, h3{color:whitesmoke;}
     position: absolute;
     content:"\2694";
     font-size: 50px;
-    line-height: 150px;
+    line-height: 100px;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
         
  }
+ 
+

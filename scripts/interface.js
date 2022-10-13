@@ -14,12 +14,26 @@ function handleClick(event){
 
    let square = event.target; // Square vai representar o elemento que foi clicado
     let position = square.id; // Guardo como posição o ID do elemento clicado
-    handleMove(position);
-    updateSquares(); 
+   
+   if(handleMove(position)){
+    setTimeout(() =>{
+        alert('O Jogo Acabou!');
+    }, 10);    
+  
+   };
+    updateSquare(position);    
 
 }
 
+function updateSquare(position){
 
+    let square = document.getElementById(position.toString());
+    let symbol = board[position];  
+    square.innerHTML = `<div class ='${symbol}'></div>` 
+
+}
+
+/** 
 function updateSquares(){ // Atualizo os quadrados
     let squares = document.querySelectorAll(".square"); // Pego os elementos da Classe Quadrados do HTML
 
@@ -33,4 +47,4 @@ function updateSquares(){ // Atualizo os quadrados
         }
 
     })
-}
+}*/
